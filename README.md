@@ -1,3 +1,3 @@
-Link to my GitHub Website:
+Link to my Project Website:
 
-abhirupdas033.github.io
+https://abhirupdas033.github.io
