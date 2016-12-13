@@ -1,0 +1,283 @@
+<ARTICLE ID="Article_1">
+ <HEADER ID="Header_Article_1">
+  <H1>HARDWARE PROJECT BUILD INSTRUCTIONS</H1><br><br>
+  <H2>	Project:<br>
+		Industrial Revolution 4.0: Building IoT Projects
+  </H2><br>
+  <H5>	Introduction to Industrial Revolution 4.0:</H5><br>
+		<p>
+		The Industrial Revolution 4.0 project build instructions are created for any interested individual or group to reproduce our project by
+		throughly following the steps detailed in this instruction page.<br><br>
+		The Primary objective of our project is to periodically monitor machine setups in a 'smart factory' where all machines withing the 
+		factory are connected to the internet and are constantly sending ans receiving information to a central hub. These information and operation
+		of the machines are monitored and controlled by authorized personnel remotely, therefore a constant presence within the factory is no longer required. 
+		This technological revolution where smart devices are interconnected over the network that interact with each other and operate defines the term
+		Internet of Things (IoT)<br>
+		<div align="center"><img src="/images/buildinstructionimages/internet-of-things.jpg" alt="IoT" style="width:500px;height:300px;"></div><br>
+		<a href="http://www.businessinsider.com/what-is-the-internet-of-things-definition-2016-8"><div align="left">What is Internet of Things?</div></a><br>
+		<a href="https://en.wikipedia.org/wiki/Internet_of_things"><div align="left">Wikipedia - IoT</div></a></p>
+  <br>
+ </HEADER>
+ 
+ <!--Update 'Future Hardware Weeks' section every week-->
+ 
+ <SECTION ID="Section_13">
+  <H3>Week 13</H3>
+  <p>PowerPoint Presentation:
+   <ul>
+	<li><a href="/documents/Abhirup_PowerPoint_Presentation_Week13.pptx">Presentation Document(MS PPTX version)</a></li>
+	<li><iframe width="560" height="315" src="https://www.youtube.com/embed/Q_f6Z0ZnewQ" frameborder="0" allowfullscreen></iframe></li>
+  </ul>
+  </p>
+ 
+ <SECTION ID="Section_12">
+  <H3>Week 12</H3>
+  <p>Progress Report:
+   <ul>
+    <li>Latest progress on my project is to find a way to blink the LED on the PCB while the camera on the Raspberry Pi scans a QR code.
+		Also a way to find out how to read voltage from the YL-40 AD/DA sensor on the PCB.</li>
+	<li>I was successful in blinking the LED on the PCB. I wrote the code in Python which makes the LED to blink green one time when
+		a QR code is scanned by the Pi camera module. This will eliminate the requirement for the user to check whether the camera has 
+		scanned QR code or not on the Pi terminal. The code will be later added to my repository.</li>
+	<li>The next target is to figure out a way to detect voltage on the 'AD2' PIN on the YL-40 sensor mounted on the PCB. As of now the 
+		safe range to measure the voltage is between 0V - 3.3V DC. Anything beyond 3.3V will likely to damage the Raspberry Pi.</li>
+	<li>The presentation of my project is on 6th Dec 2016 where I will be demonstrating my project that has been completed till now. For the presentation 
+		I will be making a case for the Raspberry Pi with a stand that will hold a QR code printed on a piece of paper. For this I will be using
+		acrylic to make the case and will be using laser cutter to cut and shape my design that I will draw using CorelDraw software.</li>
+	<li>As for the budget there was no addition of any hardware that was required. Therefore our budget is still intact under $200. But a proper
+		description of all the components will be listed below and their prices:<br>
+			<ol>
+				<li>Raspberry Pi Canakit from amazon.ca - $99CAD</li>
+				<li>Raspberry Pi camera module V2 - $40CAD</li>
+				<li>PCB sensor hat - $40CAD</li>
+				<li>Acrylic case - $10</li>
+			</ol>
+		</li>
+	<li>As of now I am running along with the schedule.</li>
+   </ul>
+  </p>
+ 
+ <SECTION ID="Section_11">
+  <H3>Week 11</H3>
+  <p>Progress Report:
+   <ul>
+    <li>Latest progress on my project was to demonstrate our project at the Open house on Saturday. By the end of the Open house I was 
+		able to successfully demonstrate my project.</li>
+	<li>I was facing OS corruption problem which stalled my project demonstration. But I was able to recover the OS and get back on track
+		quickly and able to demo.</li>
+	<li>The primary demonstration of my project was to show that the raspberry pi was able to detect a QR code using the Pi camera and display
+		the data on the Pi terminal. I was successful in doing that.</li>
+	<li>I was running a Python script that was detecting the QR code and displaying the output on the terminal screen.</li>
+	<li>Now my next step is to make the LED on the sensor hat to work alongside with QR code scanner. For that I will be writing a code on C or python
+		(which ever works best) that will detect the scan and on a successful scan it will make the LED blink on the sensor hat to green, otherwise
+		it will blink red for an error occurred to detect the QR code.</li>
+	<li>I will be finishing up this next milestone before I demo my final project for this semester on 6th December 2016.</li>
+	<li>As for the budget there was no addition of any hardware that was required. Therefore our budget is still intact under $200.</li>
+	<li>As of now I am running along with the schedule.</li>
+   </ul>
+  </p>
+ 
+ <SECTION ID="Section_10">
+  <H3>Week 10</H3>
+  <p>Progress Report:
+   <ul>
+    <li>Latest progress on my project was to install the Raspberry Pi camera module to the Raspberry Pi board and make the camera take
+		images and record videos.</li>
+	<li>Camera was installed and was able to take images and record videos.</li>
+	<li>Next step was to get the Pi camera to scan the barcodes and save the data in a database located on a cloud network. Also the 
+		cloud network is need to be setup properly so that it is able to save data in the database.</li>
+	<li>Last week I ran into a problem. The OS of my Raspberry Pi got corrupted due to unformatted SD card that had a pre-installed OS 
+		'Raspian-Jessie' and I had to format the whole SD card and flash the latest version of the 'Raspian-Jessie'.</li>
+	<li>Now I have tested my PCB again on the new OS, ran all the scripts for the LED as well as the light and temperature sensor. PCB
+		works as it supposed to be.</li>
+	<li>My next step it to reconfigure the camera and make it to scan barcodes. I will be demonstrating it in the Open House on Saturday 
+		12-NOV-2016 at 10AM</li>
+	<li>As for the budget there was no addition of any hardware that was required. Therefore our budget is still intact under $200.</li>
+	<li>As of now I am running a little behind the schedule. But I will be catching up to my schedule before demonstrating my project 
+		in Open House on Saturday.</li>
+   </ul>
+  </p>
+ 
+ <SECTION ID="Section_9">
+  <H3>Week 9</H3>
+  <p>Build Video:
+  
+		
+		<video width="520" height="480" controls>
+		<source src="/videos/MOV_3614.mp4" type="video/mp4">
+		Displaying LED blink.
+		</video>
+		<br>A complete build video will be posted soon. Video editing is in progress. 
+		
+   <!--ul>
+    <li>Mechanical assembly of hardware components are being done. The main hardware components have been acquired i.e. Raspberry Pi and 
+		On board camera for Raspberry Pi. As per the project schedule gathering of hardware components are on time, except I am behind
+		the schedule for the PCB soldering.
+		<br><img src="/images/ProjectscheduleSnip.jpg" alt="Project Schedule" width="500px" height="500px"></li>
+	<li>The camera has been installed on Raspberry Pi.</li>
+	<li>Acquired PCB kit. Will be work on soldering the PCB.</li>
+	<li>The budget is found to be less than it was mentioned on the Project Budget. In the Budget it was mention around $200CAD
+		but the final cost was around $170CAD. At this moment we do not need additional components for the project, but if anything is required
+		it will be updated and notified.</li>
+	<li>The current problem that is arising is on how to link the hardware to the cloud services. We are still working on it to figure it out</li>
+   </ul-->
+  </p>
+ 
+ <SECTION ID="Section_8">
+  <H3>Week 8</H3>
+  <p>Placard made for the project.
+  <ul>
+	<li><a href="/documents/Industry 4_0 Placard.pub">Placard Document(MS PUB version)</a></li>
+	<li>Image view of the project placard:<br><img src="/images/Industry 4_0 Placard.jpg" alt="Project Placard" width="550px" height="850px">
+  </ul>
+   <!--ul >
+    <li>Mechanical assembly of hardware components are being done. The main hardware components have been acquired i.e. Raspberry Pi and 
+		On board camera for Raspberry Pi. As per the project schedule gathering of hardware components are on time, except I am behind
+		the schedule for the PCB soldering.
+		<br><img src="/images/ProjectscheduleSnip.jpg" alt="Project Schedule" width="500px" height="500px"></li>
+	<li>The camera has been installed on Raspberry Pi.</li>
+	<li>Acquired PCB kit. Will be work on soldering the PCB.</li>
+	<li>The budget is found to be less than it was mentioned on the Project Budget. In the Budget it was mention around $200CAD
+		but the final cost was around $170CAD. At this moment we do not need additional components for the project, but if anything is required
+		it will be updated and notified.</li>
+	<li>The current problem that is arising is on how to link the hardware to the cloud services. We are still working on it to figure it out</li>
+   </ul-->
+  </p>
+ 
+ <SECTION ID="Section_7">
+  <H3>Week 7</H3>
+  <p>Successfully demonstrated PCB working.
+   <!--ul>
+    <li>Mechanical assembly of hardware components are being done. The main hardware components have been acquired i.e. Raspberry Pi and 
+		On board camera for Raspberry Pi. As per the project schedule gathering of hardware components are on time, except I am behind
+		the schedule for the PCB soldering.
+		<br><img src="/images/ProjectscheduleSnip.jpg" alt="Project Schedule" width="500px" height="500px"></li>
+	<li>The camera has been installed on Raspberry Pi.</li>
+	<li>Acquired PCB kit. Will be work on soldering the PCB.</li>
+	<li>The budget is found to be less than it was mentioned on the Project Budget. In the Budget it was mention around $200CAD
+		but the final cost was around $170CAD. At this moment we do not need additional components for the project, but if anything is required
+		it will be updated and notified.</li>
+	<li>The current problem that is arising is on how to link the hardware to the cloud services. We are still working on it to figure it out</li>
+   </ul-->
+  </p>
+ 
+ <SECTION ID="Section_6">
+  <H3>Week 6</H3>
+  <p>Progress Report:
+   <ul>
+    <li>Mechanical assembly of hardware components are being done. The main hardware components have been acquired i.e. Raspberry Pi and 
+		On board camera for Raspberry Pi. As per the project schedule gathering of hardware components are on time, except I am behind
+		the schedule for the PCB soldering.
+		<br><img src="/images/ProjectscheduleSnip.jpg" alt="Project Schedule" width="500px" height="500px"></li>
+	<li>The camera has been installed on Raspberry Pi.</li>
+	<li>Acquired PCB kit. Will be work on soldering the PCB.</li>
+	<li>The budget is found to be less than it was mentioned on the Project Budget. In the Budget it was mention around $200CAD
+		but the final cost was around $170CAD. At this moment we do not need additional components for the project, but if anything is required
+		it will be updated and notified.</li>
+	<li>The current problem that is arising is on how to link the hardware to the cloud services. We are still working on it to figure it out</li>
+   </ul>
+  </p>
+ 
+ <SECTION ID="Section_5">
+  <H3>Week 5</H3>
+  <p>
+   <ul>
+    <li>Hardware Acquisitions:
+	<ol><li>Raspberry Pi 3 Model B with Wi-Fi and Bluetooth technology</li>
+		<li>Raspberry Pi Camera Module Version-2 with 8Megapixels sensor</li>
+		<li>Temperature sensor attached on PCB</li>
+	</ol>
+	</li>
+	<li>Short clip of unboxing the components acquired:<br>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/WqdecKnNljI" frameborder="0" allowfullscreen></iframe>
+	</li>
+		<!--ul><li>
+		<Video tag to be used to upload the unboxing video
+		<video width="320" height="240" controls>
+		<source src="movie.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
+		</li></ul-->
+	<li>List of components ordered for the project. Proof of purchase:</li>
+		<ul><li><a href="/documents/Proof_of_Purchase.pdf">Order Invoice (PDF version)</a></li></ul>
+   </ul>
+  </p>
+ 
+ <SECTION ID="Section_4">
+  <H3>Week 4</H3>
+  <p>
+   <ul>
+    <li>Project budget submitted. Described the list of components required to build the project.</li>
+		<ul><li><a href="/documents/Abhirup_Project_Budget.docx">Project Budget (MS Word version)</a></li></ul>
+   </ul>
+  </p>
+ 
+ <SECTION ID="Section_3">
+  <H3>Week 3</H3>
+  <p>
+   <ul>
+    <li>Project schedule submitted.</li>
+		<ul><li><a href="/documents/Abhirup_Hardware Project Schedule.pdf">Project Schedule (PDF version)</a></li></ul>
+		<ul><li><a href="/documents/Abhirup_Hardware Project Schedule.mpp">Project Schedule (Microsoft Project version)</a></li></ul>
+   </ul>
+  </p>
+ 
+ <SECTION ID="Section_2">
+  <H3>Week 2</H3>
+  <p>
+   <ul>
+    <li>Project proposal submitted.</li>
+		<!--<ul><li><a href="/documents/project_proposal.docx">Project Proposal</a></li></ul>-->
+	<li>Installed EAGLE software for PCB fabrication to change the existing name on the PCB schema to my name.</li>
+   </ul>
+  </p>
+ 
+ <SECTION ID="Section_1">
+  <H3>Week 1</H3>
+  <p>
+   <ul>
+   <li>Created repository for CENG317 Hardware Project on GitHub!</li>
+    <li><p>Demonstrated the LED to blink on the Raspberry Pi
+		<ul>
+			<li> <img src="/images/LedBlinkRed.JPG" alt="Raspberry Pi LED!" width="350px" height="350px"> </li>
+		</ul>
+		</p>
+	</li>
+   </ul>
+  </p>
+  
+  <!--Update this section every week-->
+  <SECTION ID="Section_25">
+  <H3>Future Hardware Weeks</H3>
+  <p><ul>
+   <!--li>Week 5 Progress Report Due (including proof of order)</li>
+   <li>Week 6 Progress Report Due</li>
+   <li>Week 7 PCB Due</li>
+   <li>Week 8 Placard Due</li>
+   <li>Week 9 Progress Report Due</li>
+   <li>Week 10 Progress Report Due</li>
+   <li>Week 11 Progress Report Due</li-->
+   <li>Week 12 Progress Report Due</li>
+   <li>Week 13 Presentation Due</li>
+   <li>Week 14 Build Instructions Due</li>
+   <li>Week 15 30 Second Script Due</li>
+   <li><a href="http://www.openscad.org/downloads.html">http://www.openscad.org/downloads.html</a></li>
+   <li><a href="http://www.w3schools.com/html/html_lists.asp">http://www.w3schools.com/html/html_lists.asp</a></li>
+  </ul></p>
+ </SECTION>
+ 
+ <!--Sample code for creating a section!
+	<SECTION ID="Section_2">
+  <H3>Week 2</H3>
+  <p>
+   <ul>
+    <li> <p>Demonstrated the LED to blink on the Raspberry Pi</p>
+		<ul>
+			<li> <img src="/images/LedBlinkRed.JPG" alt="Raspberry Pi LED!" width="350px" height="350px"> </li>
+		</ul>
+	</li>
+   </ul>
+  </p>
+  //end of sample code, end of comment! used double front slashes to comment in comment!!
+  -->
+</ARTICLE>
